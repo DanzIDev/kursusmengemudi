@@ -3,89 +3,283 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Landing Page</title>
+  <meta name="description" content="Kursus mengemudi terbaik, terjangkau, dan profesional di Singaparna, Tasikmalaya. Dapatkan pelatihan berkendara yang berkualitas dengan instruktur berpengalaman dan langsung dapat SIM A.">
+    <meta name="keywords" content="kursus mengemudi, kursus mengemudi terbaik, kursus mengemudi terjangkau, kursus mengemudi profesional, kursus mengemudi Singaparna, kursus mengemudi Tasikmalaya">
+    <meta name="author" content="PT. Kurnia Dewi Persada">
+  <title>Kurnia Dewi 88 - Kursus Mengemudi Terbaik</title>
   <!-- Bootstrap CSS -->
-  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <!-- SweetAlert CSS -->
-  <link href="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.css" rel="stylesheet">
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
   <style>
+    :root {
+      --primary-color: #ff9800; /* Warna orange */
+      --secondary-color: #f9f9f9; /* Warna latar belakang yang terang */
+      --dark-color: #333; /* Warna gelap untuk teks */
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: var(--primary-color);
+    }
     .hero {
-      background: url('https://source.unsplash.com/random/1600x900') no-repeat center center;
+      background: url('https://source.unsplash.com/1600x900/?car') no-repeat center center;
       background-size: cover;
       height: 100vh;
       color: white;
-      text-align: center;
       display: flex;
-      flex-direction: column;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
+      text-align: center;
     }
-    .feature {
+    .section {
       padding: 60px 0;
+    }
+    .section:nth-child(even) {
+      background-color: var(--secondary-color);
+    }
+    .section:nth-child(odd) {
+      background-color: white;
+    }
+    .testimonial {
+      background: var(--secondary-color);
+      padding: 60px 0;
+    }
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: darken(var(--primary-color), 10%);
     }
   </style>
 </head>
 <body>
-      <!-- Hero Section -->
-  <div class="hero">
-    <h1 class="display-4">Selamat Datang di Domain Kami</h1>
-    <p class="lead">Solusi terbaik untuk kebutuhan digital Anda.</p>
-    <a href="#features" class="btn btn-primary btn-lg">Pelajari Lebih Lanjut</a>
-  </div>
 
-  <!-- Features Section -->
-  <div id="features" class="container feature">
-    <div class="row">
-      <div class="col-md-4 text-center">
-        <div class="feature-box">
-          <i class="fas fa-cogs fa-3x mb-3"></i>
-          <h3>Fitur Unggulan</h3>
-          <p>Kami menyediakan fitur terbaik untuk website Anda.</p>
-        </div>
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="#">Kursus Mengemudi</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#courses">Kursus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packages">Daftar Paket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimoni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="container">
+      <h1 class="display-4 animate__animated animate__fadeInDown">Selamat Datang di Kursus Mengemudi</h1>
+      <p class="lead animate__animated animate__fadeInUp">Belajar mengemudi dengan instruktur berpengalaman dan profesional.</p>
+      <a href="#courses" class="btn btn-primary btn-lg animate__animated animate__fadeInUp">Mulai Sekarang</a>
+    </div>
+  </section>
+
+  <!-- Courses Section -->
+  <section id="courses" class="section">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="animate__animated animate__fadeInUp">Program Kursus Kami</h2>
+        <p class="animate__animated animate__fadeInUp">Pilih program yang sesuai dengan kebutuhan Anda.</p>
       </div>
-      <div class="col-md-4 text-center">
-        <div class="feature-box">
-          <i class="fas fa-shield-alt fa-3x mb-3"></i>
-          <h3>Keamanan Tinggi</h3>
-          <p>Keamanan data Anda adalah prioritas kami.</p>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInLeft">
+            <img src="https://source.unsplash.com/400x300/?car" class="card-img-top" alt="Kursus Pemula">
+            <div class="card-body">
+              <h5 class="card-title">Kursus Pemula</h5>
+              <p class="card-text">Belajar mengemudi dari dasar dengan instruktur berpengalaman.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="col-md-4 text-center">
-        <div class="feature-box">
-          <i class="fas fa-headset fa-3x mb-3"></i>
-          <h3>Dukungan 24/7</h3>
-          <p>Tim kami siap membantu Anda kapan saja.</p>
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInUp">
+            <img src="https://source.unsplash.com/400x300/?driving" class="card-img-top" alt="Kursus Lanjutan">
+            <div class="card-body">
+              <h5 class="card-title">Kursus Lanjutan</h5>
+              <p class="card-text">Tingkatkan kemampuan mengemudi Anda dengan teknik yang lebih kompleks.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInRight">
+            <img src="https://source.unsplash.com/400x300/?road" class="card-img-top" alt="Kursus Profesional">
+            <div class="card-body">
+              <h5 class="card-title">Kursus Profesional</h5>
+              <p class="card-text">Persiapkan diri Anda untuk menjadi pengemudi profesional dengan pelatihan intensif.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
-  <!-- Footer Section -->
+  <!-- Packages Section -->
+  <section id="packages" class="section bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="animate__animated animate__fadeInUp">Daftar Paket</h2>
+        <p class="animate__animated animate__fadeInUp">Pilih paket yang sesuai dengan kebutuhan dan anggaran Anda.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-3">
+            <div class="card mb-4 animate__animated animate__fadeInLeft">
+                <div class="card-header">
+                    <h5 class="card-title">Paket A</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">10 Jam Pelajaran, Gratis Modul, Sertifikat.</p>
+                    <p class="card-text">Harga: Coming Soon</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Pilih</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 animate__animated animate__fadeInUp">
+                <div class="card-header">
+                    <h5 class="card-title">Paket B</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">20 Jam Pelajaran, Gratis Modul, Sertifikat.</p>
+                    <p class="card-text">Harga: Coming Soon</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Pilih</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 animate__animated animate__fadeInUp">
+                <div class="card-header">
+                    <h5 class="card-title">Paket C</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">30 Jam Pelajaran, Gratis Modul, Sertifikat.</p>
+                    <p class="card-text">Harga: Coming Soon</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Pilih</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="card mb-4 animate__animated animate__fadeInRight">
+                <div class="card-header">
+                    <h5 class="card-title">Paket D</h5>
+                </div>
+                <div class="card-body">
+                    <p class="card-text">40 Jam Pelajaran, Gratis Modul, Sertifikat.</p>
+                    <p class="card-text">Harga: Coming Soon</p>
+                </div>
+                <div class="card-footer">
+                    <button class="btn btn-primary">Pilih</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    </div>
+  </section>
+
+  <!-- Testimonials Section -->
+  <section id="testimonials" class="testimonial">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="animate__animated animate__fadeInUp">Apa Kata Mereka</h2>
+        <p class="animate__animated animate__fadeInUp">Testimoni dari siswa kami yang puas.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInLeft">
+            <div class="card-body">
+              <p class="card-text">"Instruktur sangat sabar dan profesional. Saya belajar banyak!"</p>
+              <footer class="blockquote-footer">Andi</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInUp">
+            <div class="card-body">
+              <p class="card-text">"Kursus yang sangat bermanfaat. Kini saya lebih percaya diri di jalan raya."</p>
+              <footer class="blockquote-footer">Budi</footer>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card mb-4 animate__animated animate__fadeInRight">
+            <div class="card-body">
+              <p class="card-text">"Paket kursusnya terjangkau dan instruksinya jelas."</p>
+              <footer class="blockquote-footer">Citra</footer>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact and Maps Section -->
+  <section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="animate__animated animate__fadeInUp">Kontak Kami</h2>
+        <p class="animate__animated animate__fadeInUp">Hubungi kami untuk informasi lebih lanjut.</p>
+      </div>
+      <div class="row">
+        <div class="col-md-6 animate__animated animate__fadeInLeft">
+          <form>
+            <div class="form-group">
+              <label for="name">Nama</label>
+              <input type="text" class="form-control" id="name" required>
+            </div>
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div class="form-group">
+              <label for="message">Pesan</label>
+              <textarea class="form-control" id="message" rows="3" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Kirim</button>
+          </form>
+        </div>
+        <div class="col-md-6 animate__animated animate__fadeInRight">
+          <div class="text-center mb-3">
+            <h2>Lokasi Kami</h2>
+            <p>Temukan kami di peta berikut.</p>
+          </div>
+          <div class="embed-responsive embed-responsive-16by9">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3957.058940307803!2d108.118393475881!3d-7.347278672282136!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e6f55a0469fbc53%3A0xd7d45d0b201d2934!2sLPK%20%22%20KURNIA%20DEWI%2088%20%22!5e0!3m2!1sid!2sid!4v1716507857037!5m2!1sid!2sid" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
   <footer class="bg-dark text-white text-center py-4">
-    <p>&copy; 2023 Domain Kami. All rights reserved.</p>
+    <p>&copy; 2024 Kursus Mengemudi. All Rights Reserved.</p>
   </footer>
 
-  <!-- Bootstrap JS and dependencies -->
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <!-- SweetAlert JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script>
-  <!-- FontAwesome for icons -->
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-  <script>
-    // Check payment status (example condition, adjust according to your logic)
-    var paymentStatus = false;
-
-    if (!paymentStatus) {
-      swal({
-        title: "Peringatan!",
-        text: "Anda belum melakukan pelunasan pembayaran. Silakan segera bayar untuk melanjutkan.",
-        icon: "warning",
-        button: "OK",
-      });
-    }
-  </script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
-
