@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Daftar Online aja, fleksibel dan hemat waktu, ke kantor tinggal kursus aja.">
+  <meta name="keywords" content="kursus mengemudi, kursus mengemudi terbaik, kursus mengemudi terjangkau, kursus mengemudi profesional, kursus mengemudi Singaparna, kursus mengemudi Tasikmalaya">
+  <meta name="author" content="PT. Kurnia Dewi Persada">
+  <title>Daftar Online | Kurnia Dewi 88 - Kursus Mengemudi</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Animate CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+  <style>
+    :root {
+      --primary-color: #ff9800; /* Warna orange */
+      --secondary-color: #f9f9f9; /* Warna latar belakang yang terang */
+      --dark-color: #333; /* Warna gelap untuk teks */
+    }
+    body {
+      font-family: Arial, sans-serif;
+    }
+    .navbar {
+      background-color: var(--primary-color);
+    }
+    .hero {
+      background: url('https://source.unsplash.com/1600x900/?car') no-repeat center center;
+      background-size: cover;
+      height: 100vh;
+      color: white;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+    .section {
+      padding: 60px 0;
+    }
+    .section:nth-child(even) {
+      background-color: var(--secondary-color);
+    }
+    .section:nth-child(odd) {
+      background-color: white;
+    }
+    .testimonial {
+      background: var(--secondary-color);
+      padding: 60px 0;
+    }
+    .btn-primary {
+      background-color: var(--primary-color);
+      border: none;
+    }
+    .btn-primary:hover {
+      background-color: darken(var(--primary-color), 10%);
+    }
+    /* Floating WhatsApp Button */
+.whatsapp-float {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  z-index: 1000;
+  background-color: #25d366; /* Warna latar belakang tombol */
+  border-radius: 50%; /* Agar tombol berbentuk lingkaran */
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Efek bayangan */
+  transition: background-color 0.3s ease; /* Animasi perubahan warna latar belakang saat hover */
+}
+
+.whatsapp-float img {
+  width: 30px; /* Ukuran ikon WhatsApp */
+  height: 30px;
+  border-radius: 50%; /* Agar ikon berbentuk lingkaran */
+}
+
+.whatsapp-float:hover {
+  background-color: #128C7E; /* Warna latar belakang tombol saat hover */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark sticky-top">
+    <a class="navbar-brand" href="./index.html">Kurnia Dewi 88</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="#courses">Kursus</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#packages">Daftar Paket</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="./daftar-online">Daftar Online</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#testimonials">Testimoni</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#contact">Kontak</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+<!-- Contact Form -->
+<section id="contact" class="section bg-light">
+    <div class="container">
+      <div class="text-center mb-5">
+        <h2 class="animate__animated animate__fadeInUp">Daftar Online</h2>
+        <p class="animate__animated animate__fadeInUp">Isi formulir di bawah ini untuk mendaftar kursus.</p>
+      </div>
+      <div class="row justify-content-center">
+        <div class="col-md-8">
+          <div class="card shadow animate__animated animate__fadeIn">
+            <div class="card-body">
+              <form id="registrationForm">
+                <div class="form-group">
+                  <label for="name">Nama</label>
+                  <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="form-group">
+                  <label for="phone">Nomor Telepon</label>
+                  <input type="text" class="form-control" id="phone" required>
+                </div>
+                <div class="form-group">
+                  <label for="address">Alamat</label>
+                  <input type="text" class="form-control" id="address" required>
+                </div>
+                <div class="form-group">
+                  <label for="age">Umur</label>
+                  <input type="number" class="form-control" id="age" required>
+                </div>
+                <div class="form-group">
+                  <label>Jenis Kelamin</label><br>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderMale" value="Laki-laki" required>
+                    <label class="form-check-label" for="genderMale">Laki-laki</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="radio" name="gender" id="genderFemale" value="Perempuan" required>
+                    <label class="form-check-label" for="genderFemale">Perempuan</label>
+                  </div>
+                </div>
+                <div class="form-group">
+                  <label for="package">Pilih Paket</label>
+                  <select class="form-control" id="package" required>
+                    <option value="">Pilih Paket</option>
+                    <option value="A">Paket A</option>
+                    <option value="B">Paket B</option>
+                    <option value="C">Paket C</option>
+                    <option value="D">Paket D</option>
+                  </select>
+                </div>
+                <div class="form-group form-check">
+                  <input type="checkbox" class="form-check-input" id="agreement" required>
+                  <label class="form-check-label" for="agreement">Saya bersungguh-sungguh untuk daftar dan tidak main-main</label>
+                </div>
+                <button type="submit" class="btn btn-primary w-100">Daftar Sekarang</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+        
+  <!-- WhatsApp Form Submission Script -->
+  
+    
+  <!-- Floating WhatsApp Button -->
+<a href="https://api.whatsapp.com/send?phone=6282317278137&text=Halo,%20saya%20ingin%20mendaftar%20kursus%20mengemudi." class="whatsapp-float" target="_blank">
+    <img src="https://image.flaticon.com/icons/png/512/124/124034.png" alt="WhatsApp" width="50" height="50">
+  </a>
+  
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-4">
+    <p>&copy; 2024 Kursus Mengemudi. All Rights Reserved.</p>
+  </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery -->
+  <script src="./daftar-online.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
